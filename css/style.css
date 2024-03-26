@@ -1,0 +1,124 @@
+/* Global Styles */
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #333;
+    color: rgb(133, 84, 84);
+}
+
+/* Header Styles */
+header, footer {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #ccc;
+    overflow: hidden; 
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    float: left; 
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.navbar a:hover, .navbar a:focus {
+    background-color: #555;
+    color: #fff;
+}
+
+.navbar a:active {
+    color: rgb(133, 84, 84);
+}
+
+/* Main Content Styles */
+main {
+    font-style: normal;
+}
+
+aside {
+    width: 20%;
+    float: left;
+}
+
+section, article {
+    width: 40%;
+    float: left;
+}
+
+/* Responsive Layout */
+@media screen and (min-width: 600px) {
+    aside, section, article {
+        width: 100%;
+    }
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(163, 109, 109); 
+}
+
+/* Image Styles */
+img {
+    border: 3px solid #eee;
+}
+
+/* Table Styles */
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+} 
+
+/* Additional Styles */
+summary {
+    text-decoration: underline;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#form p {
+    text-align: left;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+tfoot td {
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.footer a:hover {
+    background-color: #555;
+    color: #fff;
+}

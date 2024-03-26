@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Thiago">
+        <meta name="description" content="TACOS WEB">
+        <title>TACO HOUSE</title>
+        <link rel="icon" href="/img/taco.webp" type="image/x-icon">
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+    </head>
+<body>
+    <header>
+        <h1>
+            CONTACT US
+        </h1>
+        <p> 
+            <img src="/img/icons8-faq-64.png" alt="faq" title="faq">
+            If u have any doubts, send it to us
+            <img src="/img/icons8-faq-64.png" alt="faq" title="faq">
+        </p>
+    </header>   
+        <main id="contact">
+        <form id="form" action="http://httpbin.org/get" method="post" target="_blank">
+            <fieldset>
+                <legend>
+                    Personal info
+                </legend>
+                <p>
+                    <label for="FirstName">name:</label> <input type="text" name="FirstName" id="FirstName" placeholder="Thiago Fernandez Procacci" autocomplete="on" required="">
+                </p>
+                <p>
+                    <label for="email">email</label> <input type="email" name="email" id="email" placeholder="blabla@gmail.com" autocomplete="on" required="">
+                </p>
+                <p>
+                    <label for="PhoneNumber">Phone number</label> <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="+54 9 11 0000-0000" pattern="+[0-9]{2}[0-9]{1}[0-9]{2}[0-9]{4}[0-9]{4}" required="">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    what happen
+                </legend>
+                
+                    <label for="message">Type ur experience</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="your experience"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit" formaction="http://httpbin.org/post" formmethod="post"> submit 
+
+            </button>
+            <button type="reset">
+                reset
+            </button>
+        </form>
+    </main>
+    <footer>
+        <details open="">
+            <summary>
+                us
+            </summary>
+            <p>
+                <a href="https://www.instagram.com/?hl=en" target="_blank">
+                    <img src="/img/icons8-ig-48.png" alt="ig" 
+                    title="instagram">
+                </a>
+                <a href="https://twitter.com/home" target="_blank">
+                    <img src="/img/icons8-twitterx-50.png" alt="x" 
+                    title="twitter">
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="/img/icons8-whatsapp-48.png" alt="wpp" title="whatsapp">
+                </a>
+                <a href="/index.html"><img src="/img/icons8-tacos-64.png" alt="home" title="home"></a>
+            </p>
+        </details>
+    </footer>
+</body>
+</html>

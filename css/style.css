@@ -1,6 +1,9 @@
 /* Global Styles */
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -10,15 +13,66 @@ html {
 body {
     background-color: #333;
     color: rgb(133, 84, 84);
+    margin: 0px;
 }
 
-/* Header Styles */
-header, footer {
+header {
     background-color: antiquewhite;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 25px;
+    display: block;
+    clear: both;
+}
+
+@media  screen and (min-width: 600px) {
+    aside, section, article {
+        width: 100%;
+    }
+}
+
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+} 
+
+h1 {
     text-align: center;
 }
 
-/* Navigation Styles */
+h2 {
+    color:rgb(163, 109, 109); 
+}
+
 .navbar {
     background-color: #ccc;
     overflow: hidden; 
@@ -26,6 +80,8 @@ header, footer {
 
 .navbar ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar li {
@@ -34,66 +90,18 @@ header, footer {
 
 .navbar a {
     display: block;
+    padding: 14px 16px;
     text-decoration: none;
     color: #333;
-    cursor: pointer;
 }
 
-.navbar a:hover, .navbar a:focus {
+.navbar a:hover {
     background-color: #555;
     color: #fff;
 }
 
-.navbar a:active {
-    color: rgb(133, 84, 84);
-}
-
-/* Main Content Styles */
-main {
-    font-style: normal;
-}
-
-aside {
-    width: 20%;
-    float: left;
-}
-
-section, article {
-    width: 40%;
-    float: left;
-}
-
-/* Responsive Layout */
-@media screen and (min-width: 600px) {
-    aside, section, article {
-        width: 100%;
-    }
-}
-
-/* Heading Styles */
-h1 {
-    text-align: center;
-}
-
-h2 {
-    color: rgb(163, 109, 109); 
-}
-
-/* Image Styles */
-img {
-    border: 3px solid #eee;
-}
-
-/* Table Styles */
-table, tr, th, td, caption {
-    border: 1px solid #eee;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-} 
-
-/* Additional Styles */
 summary {
-    text-decoration: underline;
+    text-decoration:underline;
 }
 
 #contact p {
@@ -106,9 +114,11 @@ summary {
 
 footer ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-tfoot td {
+tfoot td{
     text-align: center;
 }
 

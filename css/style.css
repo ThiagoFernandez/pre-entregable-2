@@ -48,7 +48,7 @@ html {
 }
 
 main {
-    background-color: rgba(75, 38, 38, 0.466);
+    background-color: #F5F6F7;
 }
 
 section {
@@ -140,7 +140,7 @@ footer {
 
 .experiencia {
     padding: 40px 40px 60px 40;
-
+    background-color: #155fa811;
 }
 
 
@@ -183,7 +183,7 @@ footer {
 .experiencia .columna:hover {
     transition: 0.3s ease-in;
     border: 2px solid #7ade30;
-    background-color: #1b1b32;
+    background-color:rgba(75, 38, 38, 0.466);
     color: wheat;
 }
 

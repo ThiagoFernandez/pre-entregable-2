@@ -1,134 +1,150 @@
-/* Global Styles */
-* {
-    box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 0;
-    margin: 0;
+/* Estilos para la barra de navegación */
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f75b; /* Se establece el color de fondo de la barra de navegación */
 }
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-img {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+    .overlay i {
+        font-size: 40px;
+    }
+}
+
+/* Estilos generales */
 
 html {
     font-size: 22px;
 }
 
-body {
-    background-color: #333;
-    color: rgb(133, 84, 84);
-    margin: 0px;
-}
-
-header {
-    background-color: antiquewhite;
-    text-align: center;
-    padding: 25px;
-}
-
 main {
-    margin-right: 20px;
-    margin-left: 20px;
+    background-color: rgba(75, 38, 38, 0.466);
 }
 
-aside {
-    width: 20%;
-    float: left;
-    padding: 10px;
-}
 section {
-    width: 40%;
-    float: left;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-article {
-    width: 40%;
-    float: left;
-    padding: 10px;
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
 }
+
 
 footer {
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 25px;
     display: block;
     clear: both;
 }
-
-@media  screen and (min-width: 600px) {
-    aside, section, article {
-        width: 100%;
-    }
+/* Estilos para los elementos de navegación */
+.nav-item {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 5px;
 }
 
-table, tr, th, td, caption {
-    border: 1px solid #eee;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-    padding: 0.5rem;
+.nav-item:hover {
+    background-color: #000;
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+.navbar .nav-item :hover {
+    color: white;
+}
+
+
+
+/* hero */
+
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.hero-principal {
+    padding: 1rem;
+    margin: 1px;
+}
+
+.hero-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.hero-inferior-img {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(75, 38, 38, 0.466);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.hero-inferior {
+    margin-bottom: 15px;
+}
+
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615141;
 } 
 
-h1 {
-    text-align: center;
+
+
+
+/* contact */
+
+.contacts-us-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h2 {
-    color:rgb(163, 109, 109); 
-}
 
-.navbar {
-    background-color: #ccc;
-    overflow: hidden; 
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    float: left; 
-}
-
-.navbar a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #333;
-}
-
-.navbar a:hover {
-    background-color: #555;
-    color: #fff;
-}
-
-summary {
-    text-decoration:underline;
-}
-
-#contact p {
-    text-align: center;
-}
-
-#form p {
-    text-align: left;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-tfoot td{
-    text-align: center;
-}
-
-.footer a {
-    text-decoration: none;
-    display: block;
-    color: #333;
-}
-
-.footer a:hover {
-    background-color: #555;
-    color: #fff;
-}

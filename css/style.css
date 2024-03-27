@@ -73,6 +73,27 @@ footer {
     clear: both;
     background-color:#5B5B5B;
 }
+
+.seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.section-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik dirt', cursive;
+}
+
+.seccion-texto {
+    margin: 10px;
+}
+
 /* Estilos para los elementos de navegación */
 .nav-item {
     border: 1px solid #000;
@@ -182,9 +203,13 @@ footer {
 
 .experiencia .columna:hover {
     transition: 0.3s ease-in;
-    border: 2px solid #7ade30;
+    border: 2px solid #1b1b1a;
     background-color:rgba(75, 38, 38, 0.466);
     color: wheat;
+}
+
+.experiencia span {
+    background-color: #5B5B5B !important;
 }
 
 .experiencia span:hover{
@@ -192,6 +217,26 @@ footer {
     transform: scale(1.1);
 }
 
+/*about*/
+
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #1b1b32;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+.seccion-texto {
+    font-size: 20px;
+    text-align: center;
+    font-family:'Share Tech Mono', monospace;
+}
 
 /* contact */
 
@@ -203,3 +248,9 @@ footer {
 }
 
 
+/* gente comiendo(carousel) */
+
+.carousel-item img {
+    width: max-content;
+    height: 350px;
+}

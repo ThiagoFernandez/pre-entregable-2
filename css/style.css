@@ -63,6 +63,15 @@ h1 {
     font-family: 'Rubik Dirt', cursive;
 }
 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    display: block;
+    clear: both;
+}
 /* Estilos para los elementos de navegación */
 .nav-item {
     border: 1px solid #000;
@@ -125,3 +134,17 @@ h1 {
     font-size: 1.5rem;
     color: #615141;
 } 
+
+
+
+
+/* contact */
+
+.contacts-us-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+

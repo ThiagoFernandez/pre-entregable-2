@@ -1,7 +1,7 @@
 /* Estilos para la barra de navegación */
 .navbar {
     padding: 2rem;
-    background-color: antiquewhite; /* Se establece el color de fondo de la barra de navegación */
+    background-color: #f5f6f75b; /* Se establece el color de fondo de la barra de navegación */
 }
 
 .navbar-collapse {
@@ -42,6 +42,15 @@
 }
 
 /* Estilos generales */
+
+html {
+    font-size: 22px;
+}
+
+main {
+    background-color: rgba(75, 38, 38, 0.466);
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -73,3 +82,46 @@ h1 {
     color: white;
 }
 
+
+
+/* hero */
+
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.hero-principal {
+    padding: 1rem;
+    margin: 1px;
+}
+
+.hero-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.hero-inferior-img {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(75, 38, 38, 0.466);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.hero-inferior {
+    margin-bottom: 15px;
+}
+
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615141;
+} 

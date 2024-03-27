@@ -71,6 +71,7 @@ footer {
     padding: 25px;
     display: block;
     clear: both;
+    background-color:#5B5B5B;
 }
 /* Estilos para los elementos de navegación */
 .nav-item {
@@ -135,7 +136,61 @@ footer {
     color: #615141;
 } 
 
+/* menu */
 
+.experiencia {
+    padding: 40px 40px 60px 40;
+
+}
+
+
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+    transition: 0.6s ease-in;
+}
+
+.experiencia .columna:hover {
+    transition: 0.3s ease-in;
+    border: 2px solid #7ade30;
+    background-color: #1b1b32;
+    color: wheat;
+}
+
+.experiencia span:hover{
+    transition: 0.3s ease-in;
+    transform: scale(1.1);
+}
 
 
 /* contact */

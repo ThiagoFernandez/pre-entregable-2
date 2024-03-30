@@ -16,29 +16,14 @@
     }
 }
 
-@media screen and (min-width: 700px) {
-    .hero-inferior-img {
-        max-width: 600px;
-    }
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Agrega aquí tus estilos específicos para pantallas medianas */
 }
 
-@media screen and (max-width: 800px) {
-    .testimonio-imagen {
-        height: 120px;
-        width: 120px;
-    }
-    .testimonio-texto {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .overlay p {
-        font-size: 18px;
-    }
-    .overlay i {
-        font-size: 40px;
-    }
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 992px) {
+    /* Agrega aquí tus estilos específicos para pantallas grandes */
 }
 
 /* Estilos generales */
@@ -52,6 +37,7 @@ body {
 
 main {
     background-color: #F5F6F7;
+    overflow-x: hidden !important;
 }
 
 section {
@@ -69,8 +55,6 @@ h1 {
 h2 {
     font-size: 2rem;
 }
-
-
 
 footer {
     display: flex;
@@ -130,7 +114,6 @@ td:hover {
     transform: scale(1.03);
 }
 
-
 /* Estilos para los elementos de navegación */
 .nav-item {
     border: 1px solid #000;
@@ -140,7 +123,6 @@ td:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .nav-item:hover {
     background-color: #000;
     border: 1px solid white;
@@ -149,15 +131,11 @@ td:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .navbar .nav-item :hover {
     color: white;
 }
 
-
-
 /* hero */
-
 .hero {
     background-color: #f5f6f7;
     min-height: 450px;
@@ -185,27 +163,22 @@ td:hover {
     background-color: rgba(75, 38, 38, 0.466);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease-in-out;
-
 }
 
 .hero-inferior {
     margin-bottom: 15px;
 }
 
-
 .hero-principal h2 {
     font-size: 1.5rem;
     color: #615141;
-} 
+}
 
 /* menu */
-
 .experiencia {
     padding: 40px 40px 60px 40;
     background-color: #155fa811;
 }
-
-
 
 .experiencia-titulo {
     font-size: 25px;
@@ -245,7 +218,7 @@ td:hover {
 .experiencia .columna:hover {
     transition: 0.3s ease-in;
     border: 2px solid #1b1b1a;
-    background-color:rgba(75, 38, 38, 0.466);
+    background-color: rgba(75, 38, 38, 0.466);
     color: wheat;
 }
 
@@ -253,14 +226,12 @@ td:hover {
     background-color: #5B5B5B !important;
 }
 
-.experiencia span:hover{
+.experiencia span:hover {
     transition: 0.3s ease-in;
     transform: scale(1.1);
 }
 
 /*about*/
-
-
 .sobre-mi {
     height: 500px;
     padding: 10px;
@@ -276,11 +247,10 @@ td:hover {
 .seccion-texto {
     font-size: 20px;
     text-align: center;
-    font-family:'Share Tech Mono', monospace;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 /* contact */
-
 .contacts-us-header {
     display: flex;
     flex-direction: column;
@@ -288,18 +258,15 @@ td:hover {
     align-items: center;
 }
 
-
 /* gente comiendo(carousel) */
-
 .carousel-item img {
     width: max-content;
     height: 350px;
 }
 
 /* footer */
-
 footer {
-    background-color:  #0D0D20;
+    background-color: #0D0D20;
 }
 
 .footerContainer {
@@ -307,7 +274,7 @@ footer {
     padding: 70px 30px 20px 30px;
 }
 
-.socialIcons{
+.socialIcons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,9 +349,10 @@ footer {
 }
 
 @media (max-width: 700px) {
-    .footerNav ul{
+    .footerNav ul {
         flex-direction: column;
     }
+
     .footerNav ul li {
         width: 100%;
         text-align: center;
@@ -392,20 +360,10 @@ footer {
     }
 }
 
-
 /* events */
 /*mevents*/
-.proyecto-recientes {
-    padding: 40px;
-}
-
-.proyecto-recientes img{
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
+.overflow-x-hidden {
+    overflow-x: hidden;
 }
 
 .proyectos-contenedor {
@@ -413,34 +371,17 @@ footer {
     margin-bottom: 40px;
 }
 
-.overlay {
+.proyecto img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
     transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    text-align: center;
-}
-
-.overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
 }
 
 .proyecto:hover img {
     opacity: 0.2;
-}
-
-.proyecto:hover .overlay{
-    opacity: 1;
-}
-
-
-.getsmall {
-    width: 400px;
-    height: 400px;
 }
 
 .proyecto {
@@ -448,19 +389,42 @@ footer {
     margin: 4px;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 .overlay .iconos-contenedor {
-    display: flex ;
+    display: flex;
 }
 
 .overlay img {
-    color: black;
-    font-size: 60px;
-    margin: 10px;
-    margin-left: 60px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
 }
 
 /* orga */
-
 #orgevents {
     display: flex;
     flex-direction: column;
@@ -468,9 +432,15 @@ footer {
     align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+    th:nth-of-type(3),
+    td:nth-of-type(3) {
+        display: none;
+    }
+}
+
 
 /*partners*/
-
 .partners-h3 {
     background-color: #0c0c0c;
     color: #ffffff;
@@ -487,7 +457,6 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
 /* cel carousel */
 .celebrities-carousel {
     margin-top: 10px;
@@ -498,12 +467,13 @@ footer {
     width: 100% !important;
     height: 100% !important;
 }
-/*logos carousel */
 
+/*logos carousel */
 @keyframes slide {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -545,7 +515,6 @@ footer {
 }
 
 /* movie */
-
 .movie-container {
     background: linear-gradient(45deg, blueviolet, lightgreen);
     padding: 15px 9%;
@@ -556,18 +525,20 @@ footer {
     text-align: center;
     padding: 15px;
     color: #fff;
-    text-shadow: 0 5px 10px rgba(0, 0, 0,.2);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     font-size: 50px;
 }
 
 .movie-container .movie-box-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
-    grid-template-rows: auto auto; /* Dos filas */
+    grid-template-rows: repeat(2, auto); /* Dos filas de altura automática */
     gap: 15px;
 }
 
 .movie-container .movie-box-container .movie-box {
+    max-width: 300px;
+    margin: 0 auto;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background: #fff;
@@ -579,7 +550,6 @@ footer {
     height: 160px;
     width: 60%;
 }
-
 
 .movie-container .movie-box-container .movie-box h3 {
     color: #444;
@@ -612,9 +582,13 @@ footer {
     transform: scale(1.03);
 }
 
+@media (max-width: 768px) {
+    .movie-container .movie-box-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustamos el tamaño de las columnas */
+    }
 
-@media (min-width: 768px) {
-    .movie-container {
-        padding: 20px;
+    .movie-container .movie-box-container .movie-box img {
+        height: auto; /* Permitimos que la altura de la imagen se ajuste automáticamente */
+        width: 100%; /* Ajustamos el ancho de la imagen al 100% */
     }
 }

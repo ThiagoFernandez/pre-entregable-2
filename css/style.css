@@ -46,6 +46,9 @@
 html {
     font-size: 22px;
 }
+body {
+    background-color: #f5f6f7 ;
+}
 
 main {
     background-color: #F5F6F7;
@@ -66,6 +69,8 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+
+
 
 footer {
     display: flex;
@@ -124,6 +129,7 @@ td:hover {
     transition: all 0.5s ease-in-out;
     transform: scale(1.03);
 }
+
 
 /* Estilos para los elementos de navegación */
 .nav-item {
@@ -460,4 +466,155 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+/*partners*/
+
+.partners-h3 {
+    background-color: #0c0c0c;
+    color: #ffffff;
+    width: 100% !important;
+    text-align: center !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.partners-h3:hover {
+    background-color: #4d4d4d;
+    color: #f2f2f2 !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* cel carousel */
+.celebrities-carousel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#carouselExampleAutoplaying {
+    width: 100% !important;
+    height: 100% !important;
+}
+/*logos carousel */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos-carousel {
+    display: flex;
+}
+
+.logos {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 60px 0;
+    background-color: white !important;
+    white-space: nowrap !important;
+    width: 100% !important;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    white-space: nowrap;
+    animation: 20s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px !important;
+}
+
+@media screen and (max-width: 700px) {
+    .logos-slide img {
+        height: 20px;
+        margin: 0 10px !important;
+    }
+}
+
+/* movie */
+
+.movie-container {
+    background: linear-gradient(45deg, blueviolet, lightgreen);
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.movie-container .movie-heading {
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0,.2);
+    font-size: 50px;
+}
+
+.movie-container .movie-box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    grid-template-rows: auto auto; /* Dos filas */
+    gap: 15px;
+}
+
+.movie-container .movie-box-container .movie-box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.movie-container .movie-box-container .movie-box img {
+    height: 160px;
+    width: 60%;
+}
+
+
+.movie-container .movie-box-container .movie-box h3 {
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.movie-container .movie-box-container .movie-box p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.movie-container .movie-box-container .movie-box .btn {
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.movie-container .movie-box-container .movie-box .btn:hover {
+    letter-spacing: 1px;
+}
+
+.movie-container .movie-box-container .movie-box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+
+@media (min-width: 768px) {
+    .movie-container {
+        padding: 20px;
+    }
 }

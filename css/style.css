@@ -1,7 +1,7 @@
 /* Estilos para la barra de navegación */
 .navbar {
     padding: 2rem;
-    background-color: #f5f6f75b; /* Se establece el color de fondo de la barra de navegación */
+    background-color: #f5f6f75b; 
 }
 
 .navbar-collapse {
@@ -16,15 +16,6 @@
     }
 }
 
-/* Estilos para pantallas medianas */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    /* Agrega aquí tus estilos específicos para pantallas medianas */
-}
-
-/* Estilos para pantallas grandes */
-@media screen and (min-width: 992px) {
-    /* Agrega aquí tus estilos específicos para pantallas grandes */
-}
 
 /* Estilos generales */
 
@@ -644,8 +635,8 @@ footer {
 
 .movie-container .movie-box-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
-    grid-template-rows: repeat(2, auto); /* Dos filas de altura automática */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
     gap: 15px;
 }
 
@@ -697,11 +688,169 @@ footer {
 
 @media (max-width: 768px) {
     .movie-container .movie-box-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustamos el tamaño de las columnas */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     }
 
     .movie-container .movie-box-container .movie-box img {
-        height: auto; /* Permitimos que la altura de la imagen se ajuste automáticamente */
-        width: 100%; /* Ajustamos el ancho de la imagen al 100% */
+        height: auto;
+        width: 100%; 
     }
+}
+
+
+/* founders */
+#founders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #a69596;
+    margin: 10px 0;
+    background-image: linear-gradient(to bottom, #827878, #6e6666); 
+}
+
+#founders h2 {
+    color: #eaeaea;
+}
+
+#founders p {
+    color: #dcdcdc;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(to bottom, #6e6666, #3d3939) 1;
+}
+
+#founders figcaption:hover {
+    transition: all 0.5s ease-in-out;
+    color: #fefefe;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#founders p:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.01);
+}
+
+#founders img {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 200px !important;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
+}
+
+/* prizes */
+#prizes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+    background-image: linear-gradient(to bottom, #6e6666, #3d3939); 
+}
+
+#prizes img {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 200px !important;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
+}
+
+#prizes h2 {
+    color: #eaeaea;
+
+}
+#prizes p {
+    color: #dcdcdc; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid; 
+    border-radius: 10px; 
+    border-image: linear-gradient(to bottom, #3d3939, #000000) 1;
+}
+
+#prizes figcaption:hover {
+    transition: all 0.5s ease-in-out;
+    color: #fefefe;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#prizes p:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.01);
+}
+
+#prizes ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#prizes ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    color: #f5f6f7;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+
+#prizes ul li:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.01);
+    border: #000 2px solid;
+    border-radius: 50px;
+}
+
+/* future */
+#future {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+    background-image: linear-gradient(to bottom, #3d3939, #000000);
+}
+
+#future img {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 200px !important;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
+}
+
+#future h2 {
+    color: #eaeaea; 
+}
+
+#future p {
+    color: #dcdcdc; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid; 
+    border-radius: 10px; 
+    border-image: linear-gradient(to bottom, #000000, #000000) 1;
+}
+
+#future figcaption:hover {
+    transition: all 0.5s ease-in-out;
+    color: #fefefe;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#future p:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.01);
 }

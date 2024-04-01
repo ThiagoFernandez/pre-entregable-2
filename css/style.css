@@ -19,6 +19,18 @@
 
 /* Estilos generales */
 
+@media screen and (max-width: 768px) {
+    .footerNav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .footerNav ul li {
+      margin-bottom: 10px; 
+    }
+}
+
 html {
     font-size: 22px;
 }
@@ -243,6 +255,13 @@ td:hover {
 
 /* contact */
 /* form*/
+
+@media screen and (max-width: 768px) {
+    .field::placeholder {
+    font-size: 14px; 
+    }
+}
+
 
 .cb {
     padding: 0;

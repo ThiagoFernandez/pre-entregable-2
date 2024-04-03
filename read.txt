@@ -1,2 +1,2 @@
 /las fotos no se si tengo que tener cuidado por copyright por ejemplo si uso una de adidas o nike/
-/css tengo entendido que es sin flexbox y boxmodeling/
+/se cambio la pagina a como era en la primera entrega pero sin perder la idea original/

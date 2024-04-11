@@ -38,10 +38,6 @@ body {
     background-color: #f5f6f7 ;
 }
 
-main {
-    background-color: #F5F6F7;
-    overflow-x: hidden !important;
-}
 
 section {
     display: flex;
@@ -104,13 +100,14 @@ footer {
 
 table, tr, th, td, caption {
     background-color: #0f0f2b;
-    color: white !important;
+    color: white;
     border: 2px solid #d636363f !important;
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: 'Courier New', Courier, monospace ;
     border-collapse: collapse;
     padding: 0.5rem;
     margin: 0.5rem;
 }
+
 
 td:hover {
     transition: all 0.5s ease-in-out;
@@ -226,7 +223,7 @@ td:hover {
 }
 
 .experiencia span {
-    background-color: #5B5B5B !important;
+    background-color: #5B5B5B ;
 }
 
 .experiencia span:hover {
@@ -254,6 +251,44 @@ td:hover {
 }
 
 /* contact */
+/* carousel */
+
+/* Estilo de las cajas de texto del carrusel */
+.review-slide span {
+    display: inline-block;
+    width: 300px; 
+    margin: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.review-carousel {
+    display: flex;
+}
+
+.review {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10px 0;
+    background-color: white ;
+    white-space: nowrap ;
+    width: 100% ;
+}
+
+.review:hover .review-slide {
+    animation-play-state: paused;
+}
+
+.review-slide {
+    display: inline-block;
+    white-space: nowrap;
+    animation: 20s slide infinite linear;
+}
+
+
 /* form*/
 
 @media screen and (max-width: 768px) {
@@ -271,6 +306,7 @@ td:hover {
     height: 100vh;
 }
 
+
 .ccontainer {
     position: relative;
     display: flex;
@@ -280,6 +316,7 @@ td:hover {
     height: 100%;
     padding: 20px 100px;
 }
+
 
 .ccontainer::after {
     content: "";
@@ -380,6 +417,7 @@ td:hover {
         height: 200px;
     }
 }
+
 
 /* gente comiendo(carousel) */
 .carousel-item img {
@@ -553,6 +591,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #F5F6F7;
 }
 
 @media screen and (max-width: 600px) {
@@ -567,16 +606,16 @@ footer {
 .partners-h3 {
     background-color: #0c0c0c;
     color: #ffffff;
-    width: 100% !important;
-    text-align: center !important;
+    width: 100% ;
+    text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .partners-h3:hover {
     background-color: #4d4d4d;
-    color: #f2f2f2 !important;
-    width: 100% !important;
-    text-align: center !important;
+    color: #f2f2f2 ;
+    width: 100%;
+    text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -587,8 +626,8 @@ footer {
 }
 
 #carouselExampleAutoplaying {
-    width: 100% !important;
-    height: 100% !important;
+    width: 100% ;
+    height: 100% ;
 }
 
 /*logos carousel */
@@ -610,9 +649,9 @@ footer {
     box-sizing: border-box;
     overflow: hidden;
     padding: 60px 0;
-    background-color: white !important;
-    white-space: nowrap !important;
-    width: 100% !important;
+    background-color: white ;
+    white-space: nowrap ;
+    width: 100%;
 }
 
 .logos:hover .logos-slide {
@@ -627,13 +666,13 @@ footer {
 
 .logos-slide img {
     height: 50px;
-    margin: 0 40px !important;
+    margin: 0 40px ;
 }
 
 @media screen and (max-width: 700px) {
     .logos-slide img {
         height: 20px;
-        margin: 0 10px !important;
+        margin: 0 10px ;
     }
 }
 
@@ -757,7 +796,7 @@ footer {
     margin-left: 25%;
     margin-right: 25%;
     width: 50%;
-    height: 200px !important;
+    height: 200px ;
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
@@ -777,7 +816,7 @@ footer {
     margin-left: 25%;
     margin-right: 25%;
     width: 50%;
-    height: 200px !important;
+    height: 200px ;
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
@@ -843,7 +882,7 @@ footer {
     margin-left: 25%;
     margin-right: 25%;
     width: 50%;
-    height: 200px !important;
+    height: 200px;
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;

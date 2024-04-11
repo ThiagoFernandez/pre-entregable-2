@@ -19,22 +19,87 @@
             <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     </head>
     <body class="cb">
-        <div id="top" class="ccontainer">
-            <div class="ccontact-box">
-                <div class="cleft"></div>
-                    <div class="cright">
-                        <form id="form" action="https://api.web3forms.com/submit" method="post" rel="noopener">
-                            <h2 class="ch2">Contact Us</h2>
-                            <input type="hidden" name="access_key" value="44bac292-8a76-47fe-a281-e27bf1f66846">
-                            <input type="text" id="Name" name="Name" class="field" placeholder="Your Name" required="">
-                            <input type="email" id="Email" name="Email" class="field" placeholder="Your Email" required="">
-                            <input type="text" id="Phone" name="Phone" class="field" placeholder="Your Phone" required="">
-                            <textarea name="text" id="text" class="field" cols="23" rows="4" placeholder="Your Message" required=""></textarea>
-                            <button type="submit" class="cbtn">Send</button>
-                        </form>
+        <header id="top">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"  aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <a class="navbar-brand" href="https://github.com/ThiagoFernandez/pre-entregable-2" rel="noopener" target="_blank"><img src="../img/fightdog.jpg" alt="link-a-github" title="rocky" width="50" height="50">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="#form">FORM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/html/history.html">HISTORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/events.html">EVENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/partners.html">PARTNERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">HOME</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+            <section class="hero align-items-stretch">
+                <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+                    <img class="hero-img rounded-circle" src="../img/icons8-goat-48.png" alt="goat" title="goat">
+                    <div class="header-wrapper d-flex align-items-center">
+                        <img src="../img/icons8-customer-service-50.png" alt="customer-service" title="customer-service">
+                            <h1>Customer Service</h1>
+                        <img src="../img/icons8-customer-service-50.png" alt="customer-service" title="customer-service">
+                    </div>
+                    <h2>     
+                    Send Us Your Experience
+                    </h2>
+                </div>
+            </section>
+            <main>
+                <section class="review-carousel">
+                    <div id="reviews" class="review">
+                        <div class="review-slide">
+                            <span>"Absolutely Amazing!"</span>
+                            <span>"Perfect for Taco Tuesdays!"</span>
+                            <span>"Incredible Vegan Options!"</span>
+                            <span>"Authentic Mexican Cuisine!"</span>
+                            <span>"Hidden Gem!"</span>
+                            <span>"Best Tacos in Town!"</span>
+                        </div>
+                        <div class="review-slide">
+                            <span>"Absolutely Amazing!"</span>
+                            <span>"Perfect for Taco Tuesdays!"</span>
+                            <span>"Incredible Vegan Options!"</span>
+                            <span>"Authentic Mexican Cuisine!"</span>
+                            <span>"Hidden Gem!"</span>
+                            <span>"Best Tacos in Town!"</span>
+                        </div>
+                    </div>
+                </section>
+            <div id="form" class="ccontainer">
+                <div class="ccontact-box">
+                    <div class="cleft"></div>
+                        <div class="cright">
+                            <form id="form" action="https://api.web3forms.com/submit" method="post" rel="noopener">
+                                <h2 class="ch2">Contact Us</h2>
+                                <input type="hidden" name="access_key" value="44bac292-8a76-47fe-a281-e27bf1f66846">
+                                <input type="text" id="Name" name="Name" class="field" placeholder="Your Name" required="">
+                                <input type="email" id="Email" name="Email" class="field" placeholder="Your Email" required="">
+                                <input type="text" id="Phone" name="Phone" class="field" placeholder="Your Phone" required="">
+                                <textarea name="text" id="text" class="field" cols="23" rows="4" placeholder="Your Message" required=""></textarea>
+                                <button type="submit" class="cbtn">Send</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </main>
                 <!-- footer  -->
                 <footer>
                     <div class="footerContainer">

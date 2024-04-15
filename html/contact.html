@@ -92,12 +92,17 @@
                             <form id="form" action="https://api.web3forms.com/submit" method="post" rel="noopener">
                                 <h2 class="ch2">Contact Us</h2>
                                 <input type="hidden" name="access_key" value="44bac292-8a76-47fe-a281-e27bf1f66846">
-                                <input type="text" id="Name" name="Name" class="field" placeholder="Your Name" required="">
-                                <input type="email" id="Email" name="Email" class="field" placeholder="Your Email" required="">
-                                <input type="text" id="Phone" name="Phone" class="field" placeholder="Your Phone" required="">
-                                <textarea name="text" id="text" class="field" cols="23" rows="4" placeholder="Your Message" required=""></textarea>
+                                <label for="Name">Your Name</label>
+                                <input type="text" id="Name" name="Name" class="field" placeholder="Thiago" required="">
+                                <label for="Email">Your Email</label>
+                                <input type="email" id="Email" name="Email" class="field" placeholder="email@yopmail.com" required="">
+                                <label for="Phone">Your Phone</label>
+                                <input type="text" id="Phone" name="Phone" class="field" placeholder="+1 (123) 456-7890" required="">
+                                <label for="text">Your Message</label>
+                                <textarea name="text" id="text" class="field" cols="23" rows="4" placeholder="what'd happened" required=""></textarea>
                                 <button type="submit" class="cbtn">Send</button>
                             </form>
+                            
                         </div>
                     </div>
                 </div>

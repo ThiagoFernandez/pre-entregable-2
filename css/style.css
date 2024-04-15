@@ -204,6 +204,10 @@ td:hover {
     border-radius: 50%;
 }
 
+.home-carousel {
+    background-color: #5B5B5B;
+}
+
 .experiencia .columna {
     padding: 20px;
     border: 2px solid #8080804d;
@@ -235,7 +239,6 @@ td:hover {
 .sobre-mi {
     height: 500px;
     padding: 10px;
-    margin-bottom: 5px;
     background-color: #1b1b32;
 }
 
@@ -622,12 +625,16 @@ footer {
 /* cel carousel */
 .celebrities-carousel {
     margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: #1A1A1A;
 }
 
-#carouselExampleAutoplaying  {
-    width: 100%;
+#carouselExampleAutoplaying {
+    width: 70%;
     height: 100%;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 }
 
 /*logos carousel */

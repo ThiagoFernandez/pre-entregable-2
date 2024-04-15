@@ -98,10 +98,15 @@ footer {
     color:#584e4e ;
 }
 
-table, tr, th, td, caption {
+
+.lil-table table, 
+.lil-table tr, 
+.lil-table th, 
+.lil-table td, 
+.lil-table caption {
     background-color: #0f0f2b;
     color: white;
-    border: 2px solid #d636363f !important;
+    border: 2px solid #d636363f;
     font-family: 'Courier New', Courier, monospace ;
     border-collapse: collapse;
     padding: 0.5rem;

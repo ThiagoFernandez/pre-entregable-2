@@ -9,6 +9,11 @@
     justify-content: space-between;
 }
 
+.newnav1 {
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 767px) {
     .navbar-brand {
@@ -27,7 +32,7 @@
     }
     
     .footerNav ul li {
-      margin-bottom: 10px; 
+        margin-bottom: 10px; 
     }
 }
 
@@ -118,6 +123,7 @@ td:hover {
     transition: all 0.5s ease-in-out;
     transform: scale(1.03);
 }
+
 
 /* Estilos para los elementos de navegación */
 .nav-item {

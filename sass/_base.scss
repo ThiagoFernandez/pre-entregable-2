@@ -1,0 +1,80 @@
+/* Estilos generales */
+
+
+html {
+    font-size: 22px;
+}
+body {
+    background-color: #f5f6f7 ;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.section-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik dirt', cursive;
+}
+
+.seccion-texto {
+    margin: 10px;
+}
+
+.texto-negro {
+    color: #0a0a23;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+.section-descripcion {
+    font-size: 1.2rem;
+    color:#584e4e ;
+}
+
+
+.lil-table table, 
+.lil-table tr, 
+.lil-table th, 
+.lil-table td, 
+.lil-table caption {
+    background-color: #0f0f2b;
+    color: white;
+    border: 2px solid #d636363f;
+    font-family: 'Courier New', Courier, monospace ;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+
+td:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.03);
+}

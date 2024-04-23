@@ -1,0 +1,36 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    padding: 2vw;
+    background-color: #f5f6f75b; 
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newnav1 {
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+/* Estilos para los elementos de navegación */
+.nav-item {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:hover {
+    background-color: #000;
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav-item :hover {
+    color: white;
+}

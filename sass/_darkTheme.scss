@@ -1,0 +1,135 @@
+//all
+[data-bs-theme="dark"] body {
+    transition: background-color 1s ease, color 1s ease-in-out;
+}
+
+[data-bs-theme="dark"] h2 {
+    color: $verde-neon;
+}
+
+[data-bs-theme="dark"] h3 {
+    @extend h2;
+}
+
+[data-bs-theme="dark"] .hero {
+    background-color: #222222 ;
+    color: #fff; 
+    & .hero-principal h2{
+        color: #ffd700;
+    }
+    & .hero-principal h1{
+        color: #ff6600;
+    }
+}
+
+[data-bs-theme="dark"] .navbar {
+    background-color: #333333;
+}
+
+[data-bs-theme="dark"] .socialIcons a i {
+    color: $verde-neon;
+}
+
+[data-bs-theme="dark"] .home-carousel {
+    background-color: #37474F;
+}
+
+// index
+[data-bs-theme="dark"] .experiencia {
+    background-color: #37474F;
+    color: #FFFFFF; 
+}
+
+
+//[data-bs-theme="dark"] .founders-bc {background-color: #352424;}
+// history
+[data-bs-theme="dark"] #founders {
+    background-color: #222222;
+    background-image: linear-gradient(to bottom, #222222, #292323);
+    & h2 {
+        color: #b39ddb;
+    }
+    & figcaption {
+        color: #b39ddb;
+        &:hover {
+            color: #764cc5;
+        }
+    }
+}
+
+[data-bs-theme="dark"] #prizes {
+    background-color: #292323;
+    background-image: linear-gradient(to bottom, #292323, #312e2e);
+    & h2 {
+        color: #b39ddb;
+    }
+    & figcaption {
+        color: #b39ddb;
+        &:hover {
+            color: #764cc5;
+        }
+    }
+    & .rotating-list li:hover {
+        color: #ffcc80; 
+        border: 2px solid #ffcc80; 
+    }
+}
+
+[data-bs-theme="dark"] #future {
+    background-color: #312e2e;
+    background-image: linear-gradient(to bottom, #312e2e, #352424);
+    & h2 {
+        color: #b39ddb;
+    }
+    & figcaption {
+        color: #b39ddb;
+        &:hover {
+            color: #764cc5;
+        }
+    }
+}
+
+//events
+
+
+[data-bs-theme="dark"] #projects {
+    background-color: #352424;
+}
+
+[data-bs-theme="dark"] #projects2 {
+    @extend #projects;
+}
+
+[data-bs-theme="dark"] #orgevents {
+    @extend #projects;
+    & p {
+        color: #b39ddb;
+    }
+}
+
+// partners
+
+[data-bs-theme="dark"] .movie-container {
+    background: linear-gradient(45deg, $colorDeg1, $colorDeg2);
+}
+
+[data-bs-theme="dark"] .movie-container .movie-box-container .movie-box  {
+    background-color: #292525;
+    h4 {
+        color: #FFFFFF;
+    }
+    p {
+        color: #ffffff;
+    }
+}
+
+[data-bs-theme="dark"] .movie-container .movie-heading {
+    color: #ffffffbd;
+    text-shadow: 0 5px 10px rgba(1, 1, 1, 1.2);
+    font-size: 50px;
+}
+
+[data-bs-theme="dark"] .partners-h3:hover {
+    color: wheat;
+    background-color: #0f0e0e;
+}

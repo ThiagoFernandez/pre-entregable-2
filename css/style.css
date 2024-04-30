@@ -313,6 +313,7 @@ footer {
 * {
   margin: 0;
   padding: 0;
+  transition: background-color 1s ease, color 1s ease-in-out;
 }
 
 html {
@@ -335,7 +336,7 @@ h1 {
   font-family: "Rubik Dirt", cursive;
 }
 
-h2 {
+h2, [data-bs-theme=dark] h3 {
   font-size: 2rem;
 }
 
@@ -391,6 +392,121 @@ td:hover {
   transform: scale(1.03);
 }
 
+[data-bs-theme=dark] body {
+  transition: background-color 1s ease, color 1s ease-in-out;
+}
+
+[data-bs-theme=dark] h2, [data-bs-theme=dark] h3 {
+  color: #39FF14;
+}
+
+[data-bs-theme=dark] .hero {
+  background-color: #222222;
+  color: #fff;
+}
+[data-bs-theme=dark] .hero .hero-principal h2, [data-bs-theme=dark] .hero .hero-principal h3 {
+  color: #ffd700;
+}
+[data-bs-theme=dark] .hero .hero-principal h1 {
+  color: #ff6600;
+}
+
+[data-bs-theme=dark] .navbar {
+  background-color: #333333;
+}
+
+[data-bs-theme=dark] .socialIcons a i {
+  color: #39FF14;
+}
+
+[data-bs-theme=dark] .home-carousel {
+  background-color: #37474F;
+}
+
+[data-bs-theme=dark] .experiencia {
+  background-color: #37474F;
+  color: #FFFFFF;
+}
+
+[data-bs-theme=dark] #founders {
+  background-color: #222222;
+  background-image: linear-gradient(to bottom, #222222, #292323);
+}
+[data-bs-theme=dark] #founders h2, [data-bs-theme=dark] #founders h3 {
+  color: #b39ddb;
+}
+[data-bs-theme=dark] #founders figcaption {
+  color: #b39ddb;
+}
+[data-bs-theme=dark] #founders figcaption:hover {
+  color: #764cc5;
+}
+
+[data-bs-theme=dark] #prizes {
+  background-color: #292323;
+  background-image: linear-gradient(to bottom, #292323, #312e2e);
+}
+[data-bs-theme=dark] #prizes h2, [data-bs-theme=dark] #prizes h3 {
+  color: #b39ddb;
+}
+[data-bs-theme=dark] #prizes figcaption {
+  color: #b39ddb;
+}
+[data-bs-theme=dark] #prizes figcaption:hover {
+  color: #764cc5;
+}
+[data-bs-theme=dark] #prizes .rotating-list li:hover {
+  color: #ffcc80;
+  border: 2px solid #ffcc80;
+}
+
+[data-bs-theme=dark] #future {
+  background-color: #312e2e;
+  background-image: linear-gradient(to bottom, #312e2e, #352424);
+}
+[data-bs-theme=dark] #future h2, [data-bs-theme=dark] #future h3 {
+  color: #b39ddb;
+}
+[data-bs-theme=dark] #future figcaption {
+  color: #b39ddb;
+}
+[data-bs-theme=dark] #future figcaption:hover {
+  color: #764cc5;
+}
+
+[data-bs-theme=dark] #projects, [data-bs-theme=dark] #orgevents, [data-bs-theme=dark] #projects2 {
+  background-color: #352424;
+}
+
+[data-bs-theme=dark] #orgevents p {
+  color: #b39ddb;
+}
+
+[data-bs-theme=dark] .movie-container {
+  background: linear-gradient(45deg, #9400D3, #2E8B57);
+}
+
+[data-bs-theme=dark] .movie-container .movie-box-container .movie-box {
+  background-color: #292525;
+}
+[data-bs-theme=dark] .movie-container .movie-box-container .movie-box h4 {
+  color: #FFFFFF;
+}
+[data-bs-theme=dark] .movie-container .movie-box-container .movie-box p {
+  color: #ffffff;
+}
+
+[data-bs-theme=dark] .movie-container .movie-heading {
+  color: rgba(255, 255, 255, 0.7411764706);
+  text-shadow: 0 5px 10px rgb(1, 1, 1);
+  font-size: 50px;
+}
+
+[data-bs-theme=dark] .partners-h3:hover {
+  color: wheat;
+  background-color: #0f0e0e;
+}
+
 /* hero */
 .hero {
   background-color: #f5f6f7;
@@ -402,7 +518,7 @@ td:hover {
   padding: 1rem;
   margin: 1px;
 }
-.hero .hero-principal h2 {
+.hero .hero-principal h2, .hero .hero-principal [data-bs-theme=dark] h3, [data-bs-theme=dark] .hero .hero-principal h3 {
   font-size: 1.5rem;
   color: #615141;
 }
@@ -846,7 +962,7 @@ td:hover {
   margin: 10px 0;
   background-image: linear-gradient(to bottom, #827878, #6e6666);
 }
-#founders h2 {
+#founders h2, #founders [data-bs-theme=dark] h3, [data-bs-theme=dark] #founders h3 {
   color: #eaeaea;
 }
 #founders p {
@@ -895,7 +1011,7 @@ td:hover {
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
 }
-#prizes h2 {
+#prizes h2, #prizes [data-bs-theme=dark] h3, [data-bs-theme=dark] #prizes h3 {
   color: #eaeaea;
 }
 #prizes p {
@@ -974,7 +1090,7 @@ td:hover {
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
 }
-#future h2 {
+#future h2, #future [data-bs-theme=dark] h3, [data-bs-theme=dark] #future h3 {
   color: #eaeaea;
 }
 #future p {

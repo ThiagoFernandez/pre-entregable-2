@@ -133,3 +133,14 @@
     color: wheat;
     background-color: #0f0e0e;
 }
+
+//contact
+
+[data-bs-theme="dark"] .ccontainer .ccontact-box  {
+    background-color: #1d1c1c; 
+    color: #ffffff; 
+    & label {
+        color: #A0522D;
+    }
+}
+

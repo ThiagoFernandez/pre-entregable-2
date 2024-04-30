@@ -537,7 +537,6 @@
         margin-left: 25%;
         margin-right: 25%;
         width: 50%;
-        height: 200px ;
         border: 1px solid #000;
         border-radius: 10px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
@@ -560,8 +559,7 @@
     & img {
         margin-left: 25%;
         margin-right: 25%;
-        width: 50%;
-        height: 200px ;
+        width: 50% ;
         border: 1px solid #000;
         border-radius: 10px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
@@ -624,7 +622,8 @@ transform: rotateY(0deg);
     li {
     animation: rotateLi $duration linear infinite;
     transform-style: preserve-3d; 
-    backface-visibility: hidden; 
+    backface-visibility: hidden;
+    width: 225px;
     &:hover {
         animation-play-state: paused; 
         }
@@ -643,7 +642,6 @@ transform: rotateY(0deg);
         margin-left: 25%;
         margin-right: 25%;
         width: 50%;
-        height: 200px;
         border: 1px solid #000;
         border-radius: 10px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;

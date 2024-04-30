@@ -387,6 +387,10 @@ h2, [data-bs-theme=dark] h3 {
   margin: 0.5rem;
 }
 
+.non-scalebro:hover {
+  transform: none;
+}
+
 td:hover {
   transition: all 0.5s ease-in-out;
   transform: scale(1.03);
@@ -505,6 +509,14 @@ td:hover {
 [data-bs-theme=dark] .partners-h3:hover {
   color: wheat;
   background-color: #0f0e0e;
+}
+
+[data-bs-theme=dark] .ccontainer .ccontact-box {
+  background-color: #1d1c1c;
+  color: #ffffff;
+}
+[data-bs-theme=dark] .ccontainer .ccontact-box label {
+  color: #A0522D;
 }
 
 /* hero */
@@ -982,7 +994,6 @@ td:hover {
   margin-left: 25%;
   margin-right: 25%;
   width: 50%;
-  height: 200px;
   border: 1px solid #000;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
@@ -1006,7 +1017,6 @@ td:hover {
   margin-left: 25%;
   margin-right: 25%;
   width: 50%;
-  height: 200px;
   border: 1px solid #000;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;
@@ -1067,6 +1077,7 @@ td:hover {
   animation: rotateLi 2s linear infinite;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+  width: 225px;
 }
 .rotating-list li:hover {
   animation-play-state: paused;
@@ -1085,7 +1096,6 @@ td:hover {
   margin-left: 25%;
   margin-right: 25%;
   width: 50%;
-  height: 200px;
   border: 1px solid #000;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset, 0 0 5px #c8c8c8;

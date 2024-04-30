@@ -14,6 +14,7 @@
         <link rel="icon" href="img/icons8-tacos-64.png" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="canonical" href="https://thiagofernandez.github.io/pre-entregable-2/">
+        <script src="js/index.js"></script>
         <!-- <link rel="alternate" href="https://thiagofernandez.github.io/pre-entregable-2/es" hreflang="es-en"> -->
         <!-- icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -25,31 +26,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     </head>
 
-<body>
+<body data-bs-theme="light">
     <header id="top"><!--navegacion-->
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"  aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-toggler">
-                <a class="navbar-brand" href="https://github.com/ThiagoFernandez/pre-entregable-2" rel="noopener" target="_blank"><img src="img/icons8-home-50.png" alt="link-a-github" title="repositorio" width="50" height="50">
-                </a>
-                <ul class="navbar-nav d-flex justify-content-center align-items-center" >
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="html/history.html">HISTORY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="html/events.html">EVENTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="html/partners.html">PARTNERS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="html/contact.html">CONTACTS</a>
-                </li>
-                </ul>
-            </div>
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <button onclick="changeTheme()" class="btn rounded-fill">
+                    <i id="dl-icon" class="fa fa-moon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <a class="navbar-brand" href="https://github.com/ThiagoFernandez/pre-entregable-2" rel="noopener" target="_blank"><img src="img/icons8-home-50.png" alt="link-a-github" title="repositorio" width="50" height="50">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center" >
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="html/history.html">HISTORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/events.html">EVENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/partners.html">PARTNERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/contact.html">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <nav class="navbar navbar-expand-md">
@@ -74,7 +78,7 @@
             <img class="hero-img rounded-circle" src="img/icons8-goat-48.png" alt="goat" title="goat">
         <div class="header-wrapper d-flex align-items-center">
             <img src="img/icons8-tacos-64.png" alt="food" title="taco">
-                <h1>
+                <h1 class="texto-negro">
                     TACO HOUSE
                 </h1>
             <img src="img/icons8-tacos-64.png" alt="food" title="taco">

@@ -13,6 +13,7 @@
         <title>TACO HOUSE - partners</title>
         <link rel="icon" href="../img/taco.webp" type="image/x-icon">
         <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="../js/index.js"></script>
         <!-- icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <!-- bootstrap -->
@@ -24,12 +25,15 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     </head>
-<body>
+<body data-bs-theme="light">
     <header id="home"> <!-- navegacion -->
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"  aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+                <button onclick="changeTheme()" class="btn rounded-fill">
+                    <i id="dl-icon" class="fa fa-moon"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-toggler">
                     <a class="navbar-brand" href="../index.html" target="_blank" rel="noopener"><img src="../img/icons8-home-50.png" alt="home" title="home" width="50" height="50"></a>
@@ -70,7 +74,7 @@
         <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
             <div class="header-wrapper d-flex align-items-center"> <!-- Nuevo contenedor para el encabezado y las imágenes -->
                 <img src="../img/icons8-partners-64.png" alt="partners" title="partners">
-                <h1 id="top">Taco House Partners</h1>
+                <h1 class="texto-negro" id="top">Taco House Partners</h1>
                 <img src="../img/icons8-partners-64.png" alt="partners" title="partners">
             </div>
             <h2>Powered by Our Valued Sponsors</h2>
@@ -134,37 +138,37 @@
             <div class="movie-box-container">
                 <div class="movie-box">
                     <img src="../img/tacomovie.jpg" alt="taco-choronicles" title="taco-choronicles">
-                    <h4>Taco Chronicles</h4>
+                    <h4 class="texto-negro">Taco Chronicles</h4>
                     <p class="seccion-texto">"Taco Chronicles" is a Netflix documentary series that delves into the history and diversity of Mexican tacos, from traditional to innovative varieties.</p>
                     <a href="https://myflixtor.tv/tv/watch-taco-chronicles-hd-49300" class="btn">U Can Watch Here</a>
                 </div>
                 <div class="movie-box">
                     <img src="../img/cokkiin.jpg" alt="what-is-cooking" title="what-is-cooking">
-                    <h4>What's Cooking?</h4>
+                    <h4 class="texto-negro">What's Cooking?</h4>
                     <p class="seccion-texto">"What's Cooking?" is a 2000 film directed by Gurinder Chadha, showcasing the Thanksgiving celebrations of four diverse families in Los Angeles.</p>
                     <a href="https://en.wikipedia.org/wiki/What%27s_Cooking%3F_(film)" class="btn">U Can Watch Here</a>
                 </div>
                 <div class="movie-box">
                     <img src="../img/best-food-movies-burnt-1660577810.jpeg" alt="Burnt" title="Burnt">
-                    <h4>Burnt</h4>
+                    <h4 class="texto-negro">Burnt</h4>
                     <p class="seccion-texto">"Burnt" is a 2015 drama film starring Bradley Cooper as a troubled chef attempting to make a comeback in the culinary world.</p>
                     <a href="https://myflixtor.tv/movie/watch-burnt-hd-18325" class="btn">U Can Watch Here</a>
                 </div>
                 <div class="movie-box">
                     <img src="../img/rata.jfif" alt="Ratatouille" title="Ratatouille">
-                    <h4>Ratatouille</h4>
+                    <h4 class="texto-negro">Ratatouille</h4>
                     <p class="seccion-texto">"Ratatouille" is a 2007 Pixar animated film about a rat named Remy who dreams of becoming a chef in Paris.</p>
                     <a href="https://myflixtor.tv/movie/watch-ratatouille-hd-19398" class="btn">U Can Watch Here</a>
                 </div>
                 <div class="movie-box">
                     <img src="../img/founder.jpg" alt="the-founder" title="the-founder">
-                    <h4>The Founder</h4>
+                    <h4 class="texto-negro">The Founder</h4>
                     <p class="seccion-texto">"The Founder" is a 2016 biographical drama film starring Michael Keaton as Ray Kroc, who turned a  <em>small taco</em> house into a global empire.</p>
                     <a href="https://myflixtor.tv/movie/watch-the-founder-hd-18184" class="btn">U Can Watch Here</a>
                 </div>
                 <div class="movie-box">
                     <img src="../img/boiling.jpg" alt="boiling-point" title="boiling-point">
-                    <h4>Boiling Point</h4>
+                    <h4 class="texto-negro">Boiling Point</h4>
                     <p class="seccion-texto">"Boiling Point" is a 2021 crime thriller film starring Stephen Graham as a chef facing intense pressure in a restaurant kitchen.</p>
                     <a href="https://theflixertv.to/movie/watch-boiling-point-full-74647" class="btn">U Can Watch Here</a>
                 </div>

@@ -91,6 +91,10 @@
 
 .home-carousel {
     background-color: $color-fondo-carousel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .carousel-item img {
         width: max-content;

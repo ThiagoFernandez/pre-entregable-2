@@ -212,6 +212,13 @@ footer {
     margin: 10px;
   }
 }
+@media (max-width: 767px) {
+  .rounded-fill {
+    position: fixed;
+    top: 7px;
+    right: -14px;
+  }
+}
 @media (min-width: 768px) {
   .rounded-fill {
     position: relative;
@@ -496,6 +503,10 @@ td:hover {
 
 [data-bs-theme=dark] #orgevents p {
   color: #b39ddb;
+}
+
+[data-bs-theme=dark] .proyectos-recientes h3 {
+  color: #616161;
 }
 
 [data-bs-theme=dark] .movie-container {

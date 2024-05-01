@@ -9,6 +9,19 @@
     }
 }
 
+
+
+@media (max-width:767px) {
+    .rounded-fill {
+        position: fixed;
+        top: 7px;
+        right: -14px;
+    }
+}
+
+
+
+
 @media (min-width:768px)  {
     .rounded-fill {
         position: relative;
@@ -31,7 +44,7 @@
     }
     
     .footerNav ul li {
-      margin-bottom: 10px; 
+        margin-bottom: 10px; 
     }
 }
 

@@ -60,7 +60,7 @@ footer {
 }
 .footerContainer .socialIcons a i {
   font-size: 2em;
-  color: black;
+  color: #745757;
   opacity: 0.9;
 }
 
@@ -627,7 +627,7 @@ td:hover {
   justify-content: center;
 }
 .home-carousel .carousel-item img {
-  width: 100%;
+  width: max-content;
   height: 350px;
 }
 

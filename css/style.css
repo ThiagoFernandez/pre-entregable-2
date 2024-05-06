@@ -65,7 +65,8 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
-    margin: 0px 5px; }
+    margin: 0px 5px;
+    font-size: 15px; }
 
 #newfooter {
   position: relative;
@@ -172,7 +173,7 @@ footer {
   .rounded-fill {
     position: fixed;
     top: 7px;
-    right: -14px; } }
+    right: 15px; } }
 @media (min-width: 768px) {
   .rounded-fill {
     position: relative;
